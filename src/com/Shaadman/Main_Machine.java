@@ -142,7 +142,7 @@ public class Main_Machine {
     private static float askForMoneyAndReturnAmount() {
         Scanner in = new Scanner(System.in);
         System.out.println("Please Insert the coins \t " +
-                "example: quarter dime nickle penny \n In this format with single space \t 2 0 4 7");
+                "example: quarter[$0.25] dime[$0.10] nickle[$0.05] penny[$0.01] \n In this format with single space \t 2 0 4 7");
         String userCoinInput = in.nextLine();
         String StrSplitArray[] = userCoinInput.split(" ");
         int coinArray[] = new  int[StrSplitArray.length];
